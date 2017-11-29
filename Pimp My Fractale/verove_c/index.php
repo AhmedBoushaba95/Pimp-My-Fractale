@@ -1,13 +1,26 @@
+<!DOCTYPE html>
 <html>
-<title>PIMP MY FRACTALES</title>
-<header></header>
-<body>
-  <h1></h1>
-  <form method="POST" action="function.php">
-    <p>Nombres d'itérations</p><input type="text" name="iterations">
-    <p>Nombres de Degré</p><input type="text" name="degres">
-    <input type="submit" value="Submit">
+<head>
+    <meta charset="utf-8" />
+       <link rel="stylesheet" href="css/style.css" />
+      <title>Pimp my fractale</title>
+   </head>
 
-  </form>
+   <body>
+      <div class="content">
+       <h1>Fractale</h1>
+       <form class="SearchBar" method="post" action="function.php">
+        <p>Nombre d'itération:</p>
+        <input type="nombre" name="nbr_iterations" id="nbr1">
+        <p>Degré:</p>
+        <input type="nombre" name="nbr_degres" id="nbr2">
+        <button id="boutton">Valider</button>
+     </form>
+      </div>
+     <script type="text/javascript" src="check.js"></script>
 </body>
+<center><footer>
+  <p>Copyright © rouyer_o // verove_c // bousha_a<br>
+  </p>
+</footer></center>
 </html>

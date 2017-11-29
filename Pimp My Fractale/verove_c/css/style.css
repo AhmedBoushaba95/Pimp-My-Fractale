@@ -1,0 +1,50 @@
+body {
+    background-color: #ECF6CE;
+}
+.content {
+    margin-top: 5em;
+}
+.content h1 {
+    margin-bottom: 1em;
+    margin-left: 35%;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    text-align: center;
+    margin-right: 35%;
+    min-width: 300px;
+}
+
+.content form {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background-color: #A9F5A9;
+    margin-left: 35%;
+    margin-right: 35%;
+    min-width: 300px;
+    border-radius: 10px;
+}
+
+.content input {
+    text-align: center;
+    padding-left: 0.5em;
+    border-radius: 5px;
+    border: none;
+    margin-left: 34%;
+    margin-bottom: 15px;
+    height: 2em;
+    display: block;
+}
+
+.content p {
+    margin-left: 34%;
+}
+
+.content #boutton {
+    margin-left: 34%;
+    width: 10%;
+    min-width: 50px;
+    height: 2.4em;
+    border: none;
+    border-radius: 5px;
+    background-color: #00FF00;
+    display: block;
+}
