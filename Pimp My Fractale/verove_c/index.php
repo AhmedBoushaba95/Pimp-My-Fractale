@@ -14,10 +14,10 @@
         <input type="nombre" name="nbr_iterations" id="nbr1">
         <p>Degré:</p>
         <input type="nombre" name="nbr_degres" id="nbr2">
-	<checkBox name="noir">noir
-	  <checkBox name="bleu">bleu
-	    <checkBox name="vert">vert
-	      <checkBox name="rouge">rouge
+	        <p><input type="checkbox" name="blanc">blanc</p>
+	        <p><input type="checkbox" name="bleu">bleu</p>
+          <p><input type="checkbox" name="vert">vert</p>
+	        <p><input type="checkbox" name="rouge">rouge</p>
         <button id="boutton">Valider</button>
      </form>
       </div>
