@@ -12,8 +12,25 @@ $dim_y=900;
 $im = @imagecreate($dim_x, $dim_y)
   or die("Impossible de charger la blibliothèque gd");
 header("Content-Type: image/png");
-$black_color = imagecolorallocate($im, 0, 0, 0);
-$white_color = imagecolorallocate($im, 255, 255, 255);
+$black_color=imagecolorallocate($im, 0, 0, 0);
+
+if($_POST['noir'])
+{
+	$color = imagecolorallocate($im, 0, 0, 0); 
+}
+else if($_POST['bleu'])
+{
+	$color = imagecolorallocate($im, 53, 122, 183);
+}
+else if($_POST['vert'])
+{
+	$color = imagecolorallocate($im, 31, 160, 85);
+}
+else if($_POST['rouge'])
+{
+	$color = imagecolorallocate($im, 233, 56, 63);
+}
+
 
 for($y=0;$y<=$dim_y;$y++) {
   for($x=0;$x<=$dim_x;$x++) {
@@ -32,7 +49,7 @@ for($y=0;$y<=$dim_y;$y++) {
       }
     }
     if($i<20) { //ramification k
-      imagesetpixel ($im, $x, $y, $white_color);
+      imagesetpixel ($im, $x, $y, $color);
     }
   }
 }
