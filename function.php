@@ -51,7 +51,7 @@ if($i == $k){
 			}
 		}
 	   }
-imagestring($image, 3, 1, 1, "Nombres de degres ".$_POST['nbr_degres'], $noir);
-imagestring($image, 3, 1, 15, "Nombres diterations ".$_POST['nbr_iterations'], $noir);
+imagestring($image, 3, 1, 1, "Nombres de degres : ".$_POST['nbr_degres'], $noir);
+imagestring($image, 3, 1, 15, "Nombres diterations : ".$_POST['nbr_iterations'], $noir);
 header('Content-type: image/png');
 imagepng($image);
