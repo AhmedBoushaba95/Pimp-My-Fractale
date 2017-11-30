@@ -3,7 +3,7 @@ $x1 = -2.1;
 $x2 = 0.6;
 $y1 = -1.2;
 $y2 = 1.2;
-$zoom = 100;
+$zoom = 200;
 if(empty($_POST['nbr_iterations']))
 {
 $k =2;
@@ -41,21 +41,17 @@ for($x = 0; $x < $image_x; $x++){
   $z_i = pow($mod, $n) * sin($n * $arg) + $c_i;
   $i++;
         }
-while(sqrt($z_r*$z_r + $z_i*$z_i) < 2 AND $i < $k);//r
+while(sqrt(($z_r * $z_r) + ($z_i * $z_i)) < 2 AND $i < $k);//r
 {
-if($i == $k)
-	{
-	  imagesetpixel($image, $x, $y, $color);
-	 }
-	  else
-	     {
-	     //degrader 
-	       $degrade=255*$i/$k;
-	       $new_color = imagecolorallocate($image, 0, 0, $degrade);
-	       imagesetpixel($image, $x, $y, $new_color);
-	       }
+if($i == $k){
+	  imagesetpixel($image, $x, $y, $noir);
+	   $degrade=255*$i/$k;
+	   
+					}
+			}
+		}
 	   }
-	}
- }
+imagestring($image, 3, 1, 1, "Nombres de degres ".$_POST['nbr_degres'], $noir);
+imagestring($image, 3, 1, 15, "Nombres diterations ".$_POST['nbr_iterations'], $noir);
 header('Content-type: image/png');
 imagepng($image);
