@@ -4,16 +4,16 @@ $x2 = 0.6;
 $y1 = -1.2;
 $y2 = 1.2;
 $zoom = 200;
-if(empty($_POST['nbr_iterations']))
+if(isset($_POST['nbr_iterations'])==null)
 {
-$k =2;
+$k=50;
 }else
 {
 $k = $_POST['nbr_iterations'];
 }
-if(empty($_POST['nbr_degres']))
+if(isset($_POST['nbr_degres'])==null)
 {
-$n=50;
+$n=2;
 }else
 {
 $n=$_POST['nbr_degres'];
