@@ -49,22 +49,22 @@ for($x=0;$x<=$dim_x;$x++){
     $z_r=0;
     $z_i=0;
     $i= 0;
-           while ($z_r*$z_r + $z_i*$z_i < 4 AND $i < $n)
+           while ($z_r*$z_r + $z_i*$z_i < 4 AND $i < 20)
            {
                $mod = sqrt(($z_r * $z_r) + ($z_i * $z_i));
                $arg = atan2($z_i, $z_r);
-               $z_r = pow($mod, 20) * cos(20 * $arg) + $c_r;
-               $z_i =  pow($mod, 20) * sin(20 * $arg) + $c_i;
+               $z_r = pow($mod, $n) * cos($n * $arg) + $c1;
+               $z_i =  pow($mod, $n) * sin($n * $arg) + $c2;
                $i++;
            }
-           if ($i == $n)
+           if ($i == 20)
                imagesetpixel($image, $x, $y, $color);
            else
                imagesetpixel($image, $x, $y, $color);
        }
 
   }
-}
+
 
 imagepng($im);
 imagedestroy($im);
