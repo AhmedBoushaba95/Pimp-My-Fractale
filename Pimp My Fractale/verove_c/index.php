@@ -21,7 +21,7 @@
         <button id="boutton">Valider</button>
      </form>
       </div>
-     <script type="text/javascript" src="check.js"></script>
+     <script type="text/javascript" src="script.js"></script>
 </body>
 <center><footer>
   <p>Copyright © rouyer_o // verove_c // bousha_a<br>
