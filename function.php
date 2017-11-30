@@ -58,9 +58,9 @@ for($x=0;$x<=$dim_x;$x++){
                $i++;
            }
            if ($i == 20)
-               imagesetpixel($image, $x, $y, $color);
+               imagesetpixel($im, $x, $y, $color);
            else
-               imagesetpixel($image, $x, $y, $color);
+               imagesetpixel($im, $x, $y, $color);
        }
 
   }
